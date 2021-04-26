@@ -5,13 +5,13 @@ app:
 
 build:
     version: 0.4
-    env: DEV
+    env: PROD
     build_file: none
     output_files: output/*.zip
     image_template: vault-1.2
 
 deploy:
-    context: skumarpi/DEV
+    context: skumarpi/PROD
     type: statefulset
     replicas: 1
     ingress: none
